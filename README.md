@@ -43,7 +43,7 @@ This project uses GitHub Actions to automatically build the solution on every pu
 
 ## GitHub Actions CI
 
-![CI Build Passing](screenshot.png)
+![CI Build Passing](Screenshot.png)
 
 The screenshot above shows the GitHub Actions workflow completing successfully (green check mark).
 
