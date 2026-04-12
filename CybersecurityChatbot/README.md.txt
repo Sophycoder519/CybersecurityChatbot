@@ -3,12 +3,12 @@
 A console-based chatbot that educates South African citizens about cybersecurity threats including phishing, password safety, and safe browsing.
 
 ## Features
-- 🎤 Voice greeting (recorded WAV with fallback beeps)
-- 🎨 ASCII art logo with coloured console UI
-- 👤 Personalised interaction using user's name
-- 💬 Responses to cybersecurity questions
-- ✅ Input validation for empty or unrecognised queries
-- 🔄 Simulated conversation flow with exit commands
+- Voice greeting (recorded WAV with fallback beeps)
+- ASCII art logo with coloured console UI
+- Personalised interaction using user's name
+- Responses to cybersecurity questions
+- Input validation for empty or unrecognised queries
+- Simulated conversation flow with exit commands
 
 ## How to Run the Program
 
