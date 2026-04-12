@@ -7,7 +7,7 @@ namespace CybersecurityChatbot
 {
     public class Chatbot
     {
-        
+        // Automatic property – required by assignment
         public string UserName { get; set; }
 
         private ResponseManager responseManager;
@@ -24,8 +24,7 @@ namespace CybersecurityChatbot
             PlayVoiceGreeting();
             uiManager.DisplayAsciiArt();
             GetUserName();
-            // Conversation loop will be added in Commit 5
-            uiManager.ShowBotMessage("Conversation loop coming soon!");
+            StartConversation();  // <-- now added
         }
 
         private void PlayVoiceGreeting()
@@ -51,7 +50,6 @@ namespace CybersecurityChatbot
                 uiManager.ShowError("greeting.wav not found. Playing beep fallback.");
             }
 
-            // Fallback beep sequence
             Console.Beep(440, 400);
             Console.Beep(523, 400);
             Console.Beep(659, 600);
@@ -68,6 +66,28 @@ namespace CybersecurityChatbot
             }
             uiManager.ShowBotMessage($"Nice to meet you, {UserName}! I'm here to help you stay safe online.");
             Thread.Sleep(800);
+        }
+
+        // NEW: The conversation loop
+        private void StartConversation()
+        {
+            while (true)
+            {
+                uiManager.ShowPrompt("You: ");
+                string input = Console.ReadLine()?.Trim().ToLower();
+                if (string.IsNullOrWhiteSpace(input))
+                {
+                    uiManager.ShowBotMessage("I didn't catch that. Could you please say something?");
+                    continue;
+                }
+                if (input == "exit" || input == "quit" || input == "goodbye")
+                {
+                    uiManager.ShowBotMessage($"Goodbye, {UserName}! Stay safe online.");
+                    break;
+                }
+                string reply = responseManager.GetResponse(input);
+                uiManager.ShowBotMessage(reply);
+            }
         }
     }
 }
