@@ -37,8 +37,6 @@ Type exit, quit, or goodbye to end the conversation.
 
 Note: The greeting.wav file is automatically copied to the output directory. If no audio device is available, the program will play a sequence of beeps as a fallback.
 
-GitHub Actions CI
-This project uses GitHub Actions to automatically build the solution on every push. The workflow runs on windows-latest and uses MSBuild.
 
 ## GitHub Actions CI
 
