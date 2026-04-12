@@ -7,7 +7,7 @@ namespace CybersecurityChatbot
 {
     public class Chatbot
     {
-        // Automatic property – required by assignment
+        // Automatic property
         public string UserName { get; set; }
 
         private ResponseManager responseManager;
