@@ -47,7 +47,7 @@ The screenshot above shows the GitHub Actions workflow completing successfully (
 
 Video Presentation
 A full demonstration and code explanation video is available here:
-Watch the video presentation ()
+Watch the video presentation (https://youtu.be/oazc0vgSdkE)
 
 The video covers:
 
