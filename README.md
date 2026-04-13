@@ -40,7 +40,8 @@ Note: The greeting.wav file is automatically copied to the output directory. If 
 
 # GitHub Actions CI
 
-![CI Build Passing](Screenshot.png)
+![CI Build Passing](<img width="1918" height="907" alt="Screenshot" src="https://github.com/user-attachments/assets/ebeb1586-ce24-4e12-81e8-e80350844853" />
+)
 
 The screenshot above shows the GitHub Actions workflow completing successfully (green checkmark).
 
